@@ -1,0 +1,57 @@
+.hero {
+    padding-block-start: 16px;
+}
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font: var(--body1);
+}
+
+.hero-img {
+    text-align: center;
+}
+
+.hero-img img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.hero h1 {
+    font: var(--headLine3);
+    margin: 15px;
+}
+
+.hero h1 span:nth-of-type(1) {
+    font: var(--headLine5);
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        display: flex;
+        gap: 32px;
+    }
+
+    .hero-description {
+        order: 1;
+        max-inline-size: 450px;
+    }
+    
+    .hero-img {
+        order: 2;
+        text-align: end;
+        flex: 1;
+    }
+};
+
+@media screen and (min-width: 1024px) {
+    .hero-image {
+        inline-size: 510px;
+        block-size: 500px;
+        width: 500px;
+        height: auto;
+    }
+    
+}
